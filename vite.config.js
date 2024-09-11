@@ -18,7 +18,7 @@ export default defineConfig({
         }),
     ],
     build: {
-        outDir: 'dist',
+        outDir: 'public/dist',
         rollupOptions: {
             external: ['ziggy-js'],
         },
