@@ -47,6 +47,8 @@ const submit = () => {
 </script>
 
 <template>
+    @routes
+
     <GuestLayout>
 
         <Head title="Log in" />
@@ -120,7 +122,7 @@ const submit = () => {
                             <Link v-if="canRegister" :href="route('register')"   class="text-sm text-gray-600 underline  hover:text-gray-900">
                             if dont gave account please <span class="text-info" style="color:aqua;">Register</span>?
                             </Link>
-                            
+
                             <PrimaryButton class="ml-4" :class="{ 'opacity-25': form.processing }"
                                 :disabled="form.processing">
                                 Log in

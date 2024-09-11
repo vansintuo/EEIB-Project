@@ -17,4 +17,9 @@ export default defineConfig({
             },
         }),
     ],
+    build: {
+        rollupOptions: {
+            external: ['ziggy-js'],  // Ensure ziggy-js is treated as an external dependency
+        },
+    },
 });
