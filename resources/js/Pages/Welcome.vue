@@ -47,12 +47,8 @@ const submit = () => {
 </script>
 
 <template>
-    @routes
-
     <GuestLayout>
-
         <Head title="Log in" />
-
         <div class="flex flex-col overflow-y-auto md:flex-row">
             <div class="h-32 md:h-auto md:w-1/2">
                 <img aria-hidden="true" class="object-cover w-full h-full" src="/images/login-office.jpeg"
